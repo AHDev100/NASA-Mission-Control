@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:8000';
+const API_URL = ''; //Remove the localhost url since client and server are both hosted on same server
 
 async function httpGetPlanets() {
   const response = await fetch(`${API_URL}/planets`);
