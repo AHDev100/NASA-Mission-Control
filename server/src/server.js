@@ -5,9 +5,11 @@ const app = require('./app');
 
 const { loadPlanetsData } = require('./models/planets.model');
 
+require('dotenv').config(); 
+
 const PORT = process.env.PORT || 8000;
 
-const MONGO_URL = "mongodb+srv://ahari21:ahf4CiRvZ6WLRrEe@cluster0.2r3cxex.mongodb.net/?retryWrites=true&w=majority"; 
+const MONGO_URL = `${process.env.MONGO_URL}`; 
 
 const server = http.createServer(app); 
 
